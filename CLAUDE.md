@@ -15,7 +15,7 @@
 dotfiles/
 ├── bash/.bashrc          # Shell config, aliases, fastfetch on login, TODO system
 ├── dunst/dunstrc         # Notification daemon (Catppuccin Mocha)
-├── grub/grub             # /etc/default/grub
+├── grub/theme/theme.txt  # GRUB visual theme → /boot/grub/themes/baker/
 ├── hypr/hyprland.conf    # WM config: keybinds, theme, animations, input
 ├── kitty/kitty.conf      # Terminal config (Catppuccin Mocha, JetBrains Mono 13pt)
 ├── kitty/mocha.conf      # Catppuccin Mocha colour palette
@@ -55,3 +55,5 @@ dotfiles/
 
 ## Deployment
 All configs live in this repo. Symlinking is handled externally by the OS repo's update script — changes here are picked up on the next system update run. After editing configs, commit and push so the OS repo pulls the latest.
+
+**GRUB split:** `/etc/default/grub` is managed by baker's `configure.sh` (machine-specific: LUKS UUID, nvidia modeset, os-prober, timeout). Only the theme lives here — `grub/theme/` symlinks to `/boot/grub/themes/baker/`, and `configure.sh` sets `GRUB_THEME` and runs `grub-mkconfig` if `theme.txt` is present.

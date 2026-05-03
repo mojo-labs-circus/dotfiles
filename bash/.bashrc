@@ -20,3 +20,5 @@ if [[ -f "$HOME/.todo" ]]; then
     echo -e "\033[1;33m============\033[0m"
     echo ""
 fi
+export PATH="$HOME/.local/bin:$PATH"
+alias baker-update="$HOME/projects/baker/upgrade.sh"

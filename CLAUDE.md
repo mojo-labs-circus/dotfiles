@@ -32,7 +32,6 @@ dotfiles/
 - **Gaps:** 2px inner, 5px outer
 
 ## Known Issues / TODOs
-- `waybar/config.jsonc` still references `sway/workspaces` and `sway/window` modules — these need replacing with `hyprland/workspaces` and `hyprland/window` for Hyprland compatibility
 - README says Wofi but Rofi is in use — README needs updating
 - README says Zsh + Oh My Zsh + Starship but `.bashrc` is the active shell config
 

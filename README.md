@@ -3,7 +3,10 @@
 A minimalist, dark, terminal-driven rice for Hyprland on Arch Linux.
 Pixel art aesthetics with Grateful Dead cosmic vibes.
 
+Deployed by [mojos](https://github.com/mojo-labs-circus/mojos) as part of MojOS.
+
 ## System
+
 - OS: Arch Linux
 - WM: Hyprland
 - Terminal: Kitty
@@ -15,18 +18,21 @@ Pixel art aesthetics with Grateful Dead cosmic vibes.
 - Wallpaper: mpvpaper
 
 ## Theme
+
 - Colours: Custom dark amber/teal palette
 - Icons: Papirus Dark
 - Font: TBD Nerd Font
 - Pixel art wallpaper - skiing/mountain/nature theme
 
 ## Modes
+
 - **Coding** — terminal focused, performance stats, minimal distractions
 - **Gaming** — minimal, performance overlay, no animations
 - **Grateful Dead** — cosmic, relaxed, music integration
 
 ## Structure
-\```
+
+```
 dotfiles/
 ├── kitty/
 ├── bash/
@@ -35,11 +41,12 @@ dotfiles/
 ├── wofi/
 ├── dunst/
 └── scripts/
-\```
+```
 
 ## Status
-Work in progress — currently migrating from Pop!_OS to Arch Linux.
-Screenshots coming soon.
 
-## Inspiration
-Built with reference to r/unixporn community.
+Work in progress.
+
+## License
+
+[MIT](LICENSE)
